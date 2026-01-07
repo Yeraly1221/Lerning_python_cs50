@@ -1,0 +1,162 @@
+site_name: Fusion Engine Documentation
+site_description: A custom open-source game engine on OpenGL and Python, it’s written in pure Python! It’s easy and fast!
+
+repo_name: fusionengine-org/fusion
+repo_url: https://github.com/fusionengine-org/fusion
+
+nav:
+  - Home: 'index.md'
+
+  - Getting Started: 'get-started.md'
+
+  - Wiki:
+    - Window with fusion: 'wiki/window.md'
+    - Rendering with fusion: 'wiki/rendering.md'
+    - Events and Keys: 'wiki/events-keys.md'
+    - Color and colortools: 'wiki/color.md'
+    - Managing sounds and music: 'wiki/music.md'
+    - Nodes and Scenes: 'wiki/node.md'
+    - Storage system: 'wiki/storage.md'
+    - Animations and Spritesheets: 'wiki/animation.md'
+    - UI module: 'wiki/ui.md'
+    - Math and Vectors: 'wiki/math.md'
+    - Extra stuff: 'wiki/extra.md'
+    - External tools: 'wiki/external.md'
+    - Moving from v4 to v5: 'wiki/v5-moving.md'
+
+  - Tutorials:
+    - Setting up Fusion Engine: 'tutorials/setup.md'
+    - Basics of Fusion Engine: 'tutorials/basics.md'
+
+    
+  - Changelog:
+    - V5: 'changelog/v5.md'
+    - V4: 'changelog/v4.md'
+    - V3: 'changelog/v3.md'
+
+  - Legacy:
+    - Start: 'legacy/index.md'
+    - V3:
+      - Wiki:
+        - Main page: 'legacy/v3/wiki/wiki.md'
+        - Keys page: 'legacy/v3/wiki/keys.md'
+        - Color page: 'legacy/v3/wiki/color.md'
+        - Math page: 'legacy/v3/wiki/math.md'
+        - Fonts page: 'legacy/v3/wiki/fonts.md'
+        - External page: 'legacy/v3/wiki/external.md'
+
+      - Api:
+        - Main page: 'legacy/v3/api/index.md'
+        - API page: 'legacy/v3/api/api.md'
+        - Color page: 'legacy/v3/api/color.md'
+        - Keys page: 'legacy/v3/api/keys.md'
+        - Fonts page: 'legacy/v3/api/fonts.md'
+        - Math page: 'legacy/v3/api/math.md'
+
+
+      - Tutorial:
+        - Main page: 'legacy/v3/tutorials/index.md'
+        - Setup: 'legacy/v3/tutorials/setup.md'
+        - Basics: 'legacy/v3/tutorials/basics.md'
+
+    - V4:
+      - Wiki:
+        - Window with fusion: 'legacy/v4/wiki/window.md'
+        - Rendering with fusion: 'legacy/v4/wiki/rendering.md'
+        - Events and Keys: 'legacy/v4/wiki/events-keys.md'
+        - Color and colortools: 'legacy/v4/wiki/color.md'
+        - Managing sounds and music: 'legacy/v4/wiki/music.md'
+        - Scenes, entities and animations: 'legacy/v4/wiki/scene.md'
+        - Storage system: 'legacy/v4/wiki/storage.md'
+        - UI module: 'legacy/v4/wiki/ui.md'
+        - Math and Vectors: 'legacy/v4/wiki/math.md'
+        - Build in Fonts: 'legacy/v4/wiki/fonts.md'
+        - Extra stuff: 'legacy/v4/wiki/extra.md'
+        - External tools: 'legacy/v4/wiki/external.md'
+
+      - Tutorial:
+        - Setup: 'legacy/v4/tutorials/setup.md'
+        - Basics: 'legacy/v4/tutorials/basics.md'
+
+      - API:
+        - Main Page: 'legacy/v4/api/index.md'
+        - Api Page: 'legacy/v4/api/api.md'
+        - Color Page: 'legacy/v4/api/color.md'
+        - Keys Page: 'legacy/v4/api/keys.md'
+        - Fonts Page: 'legacy/v4/api/fonts.md'
+        
+
+
+theme:
+  name: material
+
+  logo: assets/logo/fe.png
+  favicon: assets/logo/fe.png
+
+  features:
+    - navigation.path
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - toc.follow
+    - navigation.expand
+
+    - content.code.copy
+
+
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
